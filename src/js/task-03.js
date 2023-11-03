@@ -12,7 +12,7 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-const list = document.querySelector(".gallery");
+const list = document.querySelector("ul.gallery");
 console.log(list);
 const markup = images
 .map((image) => `<li><img src=${image.url} width='300' height='200' alt='${image.alt}'></img></li>`)
@@ -25,3 +25,4 @@ list.style.gap = "12px";
 list.style.listStyle = "none";
 list.style.justifyContent = "center";
 
+console.log(list);
